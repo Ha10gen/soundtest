@@ -34,6 +34,9 @@
                     Sw = 2;
                     break;
                 case 2:
+                    Sw = 3;
+                    break;
+                case 3:
                     Sw = 0;
                     break;
             }
@@ -50,6 +53,9 @@
                 case 2:
                     document.getElementById("s0w").play();
                     break;
+                case 3:
+                    document.getElementById("s0t").play();
+                    break;
             }
 
         }
@@ -65,6 +71,9 @@
                 case 2:
                     document.getElementById("s1w").play();
                     break;
+                case 3:
+                    document.getElementById("s1t").play();
+                    break;
             }
         }
 
@@ -78,6 +87,9 @@
                     break;
                 case 2:
                     document.getElementById("s2w").play();
+                    break;
+                case 3:
+                    document.getElementById("s2t").play();
                     break;
             }
         }
@@ -93,6 +105,9 @@
                 case 2:
                     document.getElementById("s3w").play();
                     break;
+                case 3:
+                    document.getElementById("s3t").play();
+                    break;
             }
         }
 
@@ -107,6 +122,9 @@
                 case 2:
                     document.getElementById("s4w").play();
                     break;
+                case 3:
+                    document.getElementById("s4t").play();
+                    break;
             }
         }
 
@@ -120,6 +138,9 @@
                     break;
                 case 2:
                     document.getElementById("s5w").play();
+                    break;
+                case 3:
+                    document.getElementById("s5t").play();
                     break;
             }
         }
@@ -200,6 +221,32 @@
     <audio id="s5w" preload="auto">
         <source src="mp3/WT_s5.mp3" type="audio/mp3">
         <source src="wav/WT_s5.wav" type="audio/wav">
+    </audio>
+
+    <!-- TOWN-0 PHASE-5 -->
+    <audio id="s0t" preload="auto">
+        <source src="mp3/T0P5_s0.mp3" type="audio/mp3">
+        <source src="wav/T0P5_s0.wav" type="audio/wav">
+    </audio>
+    <audio id="s1t" preload="auto">
+        <source src="mp3/T0P5_s1.mp3" type="audio/mp3">
+        <source src="wav/T0P5_s1.wav" type="audio/wav">
+    </audio>
+    <audio id="s2t" preload="auto">
+        <source src="mp3/T0P5_s2.mp3" type="audio/mp3">
+        <source src="wav/T0P5_s2.wav" type="audio/wav">
+    </audio>
+    <audio id="s3t" preload="auto">
+        <source src="mp3/T0P5_s3.mp3" type="audio/mp3">
+        <source src="wav/T0P5_s3.wav" type="audio/wav">
+    </audio>
+    <audio id="s4t" preload="auto">
+        <source src="mp3/T0P5_s4.mp3" type="audio/mp3">
+        <source src="wav/T0P5_s4.wav" type="audio/wav">
+    </audio>
+    <audio id="s5t" preload="auto">
+        <source src="mp3/T0P5_s5.mp3" type="audio/mp3">
+        <source src="wav/T0P5_s5.wav" type="audio/wav">
     </audio>
     <p class="button">
         <input type="button" onclick="s0();" value="    s0  " accesskey="1" />
