@@ -12,66 +12,194 @@
         }
         
         p.button {
-            width: 149px;
+            width: 200px;
             text-align: center;
-            margin: 5px 0px;
+            margin: 10px 0px;
         }
     </style>
 
-    <script type="text/javascript">
-        // ========================================
-        // 効果音を鳴らす（★今回のメインはこれ★）
-        // ========================================
-        function s0() {
-            document.getElementById("s0").play();
-        }
 
-        function s1() {
-            document.getElementById("s1").play();
-        }
-
-        function s2() {
-            document.getElementById("s2").play();
-        }
-
-        function s3() {
-            document.getElementById("s3").play();
-        }
-
-        function s4() {
-            document.getElementById("s4").play();
-        }
-
-        function s5() {
-            document.getElementById("s5").play();
-        }
-    </script>
 </head>
 
 <body>
-    <audio id="s0" preload="auto">
+    <script>
+        var Sw = 0;
+
+        function Switcher() {
+            switch (Sw) {
+                case 0:
+                    Sw = 1;
+                    break;
+                case 1:
+                    Sw = 2;
+                    break;
+                case 2:
+                    Sw = 0;
+                    break;
+            }
+        }
+
+        function s0() {
+            switch (Sw) {
+                case 0:
+                    document.getElementById("s0p").play();
+                    break;
+                case 1:
+                    document.getElementById("s0r").play();
+                    break;
+                case 2:
+                    document.getElementById("s0w").play();
+                    break;
+            }
+
+        }
+
+        function s1() {
+            switch (Sw) {
+                case 0:
+                    document.getElementById("s1p").play();
+                    break;
+                case 1:
+                    document.getElementById("s1r").play();
+                    break;
+                case 2:
+                    document.getElementById("s1w").play();
+                    break;
+            }
+        }
+
+        function s2() {
+            switch (Sw) {
+                case 0:
+                    document.getElementById("s2p").play();
+                    break;
+                case 1:
+                    document.getElementById("s2r").play();
+                    break;
+                case 2:
+                    document.getElementById("s2w").play();
+                    break;
+            }
+        }
+
+        function s3() {
+            switch (Sw) {
+                case 0:
+                    document.getElementById("s3p").play();
+                    break;
+                case 1:
+                    document.getElementById("s3r").play();
+                    break;
+                case 2:
+                    document.getElementById("s3w").play();
+                    break;
+            }
+        }
+
+        function s4() {
+            switch (Sw) {
+                case 0:
+                    document.getElementById("s4p").play();
+                    break;
+                case 1:
+                    document.getElementById("s4r").play();
+                    break;
+                case 2:
+                    document.getElementById("s4w").play();
+                    break;
+            }
+        }
+
+        function s5() {
+            switch (Sw) {
+                case 0:
+                    document.getElementById("s5p").play();
+                    break;
+                case 1:
+                    document.getElementById("s5r").play();
+                    break;
+                case 2:
+                    document.getElementById("s5w").play();
+                    break;
+            }
+        }
+    </script>
+    <!-- パレード -->
+    <audio id="s0p" preload="auto">
         <source src="mp3/Parade_s0.mp3" type="audio/mp3">
         <source src="wav/Parade_s0.wav" type="audio/wav">
     </audio>
-    <audio id="s1" preload="auto">
+    <audio id="s1p" preload="auto">
         <source src="mp3/Parade_s1.mp3" type="audio/mp3">
         <source src="wav/Parade_s1.wav" type="audio/wav">
     </audio>
-    <audio id="s2" preload="auto">
+    <audio id="s2p" preload="auto">
         <source src="mp3/Parade_s2.mp3" type="audio/mp3">
         <source src="wav/Parade_s2.wav" type="audio/wav">
     </audio>
-    <audio id="s3" preload="auto">
+    <audio id="s3p" preload="auto">
         <source src="mp3/Parade_s3.mp3" type="audio/mp3">
         <source src="wav/Parade_s3.wav" type="audio/wav">
     </audio>
-    <audio id="s4" preload="auto">
+    <audio id="s4p" preload="auto">
         <source src="mp3/Parade_s4.mp3" type="audio/mp3">
         <source src="wav/Parade_s4.wav" type="audio/wav">
     </audio>
-    <audio id="s5" preload="auto">
+    <audio id="s5p" preload="auto">
         <source src="mp3/Parade_s5.mp3" type="audio/mp3">
         <source src="wav/Parade_s5.wav" type="audio/wav">
+    </audio>
+
+    <!-- RIDE THE BLUE LIMBO -->
+    <audio id="s0r" preload="auto">
+        <source src="mp3/BlueLimbo_s0.mp3" type="audio/mp3">
+        <source src="wav/BlueLimbo_s0.wav" type="audio/wav">
+    </audio>
+    <audio id="s1r" preload="auto">
+        <source src="mp3/BlueLimbo_s1.mp3" type="audio/mp3">
+        <source src="wav/BlueLimbo_s1.wav" type="audio/wav">
+    </audio>
+    <audio id="s2r" preload="auto">
+        <source src="mp3/BlueLimbo_s2.mp3" type="audio/mp3">
+        <source src="wav/BlueLimbo_s2.wav" type="audio/wav">
+    </audio>
+    <audio id="s3r" preload="auto">
+        <source src="mp3/BlueLimbo_s3.mp3" type="audio/mp3">
+        <source src="wav/BlueLimbo_s3.wav" type="audio/wav">
+    </audio>
+    <audio id="s4r" preload="auto">
+        <source src="mp3/BlueLimbo_s4.mp3" type="audio/mp3">
+        <source src="wav/BlueLimbo_s4.wav" type="audio/wav">
+    </audio>
+    <audio id="s5r" preload="auto">
+        <source src="mp3/BlueLimbo_s5.mp3" type="audio/mp3">
+        <source src="wav/BlueLimbo_s5.wav" type="audio/wav">
+    </audio>
+
+    <!-- 世界タービン -->
+    <audio id="s0w" preload="auto">
+        <source src="mp3/WT_s0.mp3" type="audio/mp3">
+        <source src="wav/WT_s0.wav" type="audio/wav">
+    </audio>
+    <audio id="s1w" preload="auto">
+        <source src="mp3/WT_s1.mp3" type="audio/mp3">
+        <source src="wav/WT_s1.wav" type="audio/wav">
+    </audio>
+    <audio id="s2w" preload="auto">
+        <source src="mp3/WT_s2.mp3" type="audio/mp3">
+        <source src="wav/WT_s2.wav" type="audio/wav">
+    </audio>
+    <audio id="s3w" preload="auto">
+        <source src="mp3/WT_s3.mp3" type="audio/mp3">
+        <source src="wav/WT_s3.wav" type="audio/wav">
+    </audio>
+    <audio id="s4w" preload="auto">
+        <source src="mp3/WT_s4.mp3" type="audio/mp3">
+        <source src="wav/WT_s4.wav" type="audio/wav">
+    </audio>
+    <audio id="s5w" preload="auto">
+        <source src="mp3/WT_s5.mp3" type="audio/mp3">
+        <source src="wav/WT_s5.wav" type="audio/wav">
     </audio>
     <p class="button">
         <input type="button" onclick="s0();" value="    s0  " accesskey="1" />
@@ -85,6 +213,8 @@
         <input type="button" onclick="s4();" value="    s4  " accesskey="5" />
         <br>
         <input type="button" onclick="s5();" value="    s5  " accesskey="6" />
+        <br>
+        <input type="button" onclick="Switcher();" value="    ss  " accesskey="7" />
     </p>
     </div>
 </body>
