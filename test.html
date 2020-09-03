@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        body {
+            font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic", sans-serif;
+        }
+        
+        p.button {
+            width: 149px;
+            text-align: center;
+            margin: 5px 0px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        // ========================================
+        // 効果音を鳴らす（★今回のメインはこれ★）
+        // ========================================
+        function s0() {
+            document.getElementById("s0").play();
+        }
+
+        function s1() {
+            document.getElementById("s1").play();
+        }
+
+        function s2() {
+            document.getElementById("s2").play();
+        }
+
+        function s3() {
+            document.getElementById("s3").play();
+        }
+
+        function s4() {
+            document.getElementById("s4").play();
+        }
+
+        function s5() {
+            document.getElementById("s5").play();
+        }
+    </script>
+</head>
+
+<body>
+    <audio id="s0" preload="auto">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/mp3/Parade_s0.mp3" type="audio/mp3">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/wav/Parade_s0.wav" type="audio/wav">
+    </audio>
+    <audio id="s1" preload="auto">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/mp3/Parade_s1.mp3" type="audio/mp3">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/wav/Parade_s1.wav" type="audio/wav">
+    </audio>
+    <audio id="s2" preload="auto">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/mp3/Parade_s2.mp3" type="audio/mp3">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/wav/Parade_s2.wav" type="audio/wav">
+    </audio>
+    <audio id="s3" preload="auto">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/mp3/Parade_s3.mp3" type="audio/mp3">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/wav/Parade_s3.wav" type="audio/wav">
+    </audio>
+    <audio id="s4" preload="auto">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/mp3/Parade_s4.mp3" type="audio/mp3">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/wav/Parade_s4.wav" type="audio/wav">
+    </audio>
+    <audio id="s5" preload="auto">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/mp3/Parade_s5.mp3" type="audio/mp3">
+        <source src="file:///C:/Users/kuluy/Desktop/programing/レーザーハープ/wav/Parade_s5.wav" type="audio/wav">
+    </audio>
+    <p class="button">
+        <input type="button" onclick="s0();" value="    s0  " accesskey="1" />
+        <br>
+        <input type="button" onclick="s1();" value="    s1  " accesskey="2" />
+        <br>
+        <input type="button" onclick="s2();" value="    s2  " accesskey="3" />
+        <br>
+        <input type="button" onclick="s3();" value="    s3  " accesskey="4" />
+        <br>
+        <input type="button" onclick="s4();" value="    s4  " accesskey="5" />
+        <br>
+        <input type="button" onclick="s5();" value="    s5  " accesskey="6" />
+    </p>
+    </div>
+</body>
+
+</html>
